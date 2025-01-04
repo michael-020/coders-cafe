@@ -4,6 +4,7 @@ import HeroSection from './HeroSection';
 import Menu from './Menu';
 import Purchase from './Purchase';
 import DownloadCard from './DownloadCard';
+import Footer from './Footer';
 
 
  const HomePage = () => {
@@ -24,6 +25,9 @@ import DownloadCard from './DownloadCard';
           </div>
           <div className='translate-y-40'>
             <DownloadCard />
+          </div>
+          <div className='translate-y-40'>
+            <Footer />
           </div>
       </div>
      
