@@ -1,26 +1,11 @@
 "use client"
-import React, { useEffect } from 'react'
-import { useAnimate, motion } from 'framer-motion'
+import React from 'react'
+import { motion } from 'framer-motion'
 
 const HeroSection = () => {
-    const [scope, animate] = useAnimate()
-
-    // useEffect(() => {
-    //     async function initialAnimation() {
-    //         await animate("#left-header", {opacity: 0, y: -40})
-    //         // await animate("#left-block", {opacity: 0, y: -40})
-    //         // await animate("#right-header", {opacity: 0, y: -40})
-    //         // await animate("#right-header", {opacity: 0, y: -40})
-    //         await animate("#coffee-mug", {scale: 0, opacity: 0})
-    //         await animate("#coffee-mug", {scale: 1, opacity: 1}, {ease: "easeIn", type: "spring"})
-    //         await animate("#left-header", {opacity: 1, y: 0}, { duration: 0.24})
-    //         // await animate("#left-block", {opacity: 1, y: 0}, { duration: 0.24})
-    //     }
-    //     initialAnimation()
-    // }, [])
-
+   
   return (
-    <div className='w-screen h-screen overflow-x-hidden relative '>
+    <div className='w-screen h-screen overflow-x-hidden relative ref={scope}'>
         <div className=''>
             <div className='absolute  h-screen bg-[#1A1F25] w-[50%] z-10'>
 
@@ -29,11 +14,11 @@ const HeroSection = () => {
 
             </div>
         </div>
-        <div ref={scope} className='grid grid-cols-3 justify-items-center gap-2 items-center relative top-20'>
+        <div className='grid grid-cols-3 justify-items-center gap-2 items-center relative top-20'>
             {/* left part */}
             <div className='z-20'>
-                <div className='relative bottom-24 left-28'>
-                    <motion.h1 id='left-header' className='text-[#F1DABF] text-[4.8rem] font-bold leading-[6rem]'
+                <div className='relative bottom-24 left-28 sm:bottom-10 sm:left-10'>
+                    <motion.h1 id='left-header' className='text-[#F1DABF] lg:text-[4.8rem] font-bold lg:leading-[6rem] relative lg:left-20 lg:top-12 top-32 text-3xl'
                         initial={{
                             opacity: 0,
                             y: -40
@@ -65,14 +50,14 @@ const HeroSection = () => {
                         type: "spring"
                     }}
                 >   
-                    <div className='bg-[#272C35] h-48 w-64 absolute ' />
-                    <div className='relative'>   
+                    <div className='bg-[#272C35] lg:h-48 lg:w-64  relative sm:h-32 sm:w-48 left-12 top-24' />
+                    <div className='relative lg:left-24 '>   
                         
                         <div className='text-[#F1DABF] z-10'>
-                            <h3 className='text-2xl font-medium relative top-5 left-8'>
+                            <h3 className='lg:text-2xl sm:text-md relative lg:-top-20  sm:left-2 sm:bottom-2 text-'>
                                 Black Lifestyle Lovers,
                             </h3>
-                            <p className='opacity-50 text-sm relative top-10 left-8 leading-7'>
+                            <p className='opacity-50 xl:text-sm md:text-xs sm:text-[0.5rem] relative  lg:-top-12  sm:leading-10 sm:left-2'>
                                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br />
                                 Delectus aspernatur, cumque eos neque dolorem <br />
                                 architecto deserunt quis voluptatibus in quisquam quia <br />
@@ -82,10 +67,10 @@ const HeroSection = () => {
                     </div>
                 </motion.div>
             </div>
-            {/* <div className='bg-[#1A1F25] h-96 w-40 absolute -top-[12vh] left-[38.4vw] z-10' /> */}
+
             {/* center image part */}
-            <div className='relative -left-2 z-20'>
-                <motion.img id='coffee-mug' src='black.png' className='sticky' 
+            <div className='absolute md:relative -bottom-[12rem] sm:-left-2 z-20 sm:top-16 lg:top-2'>
+                <motion.img id='coffee-mug' src='black.png' className='sticky [filter:drop-shadow(15px_0px_30px_#000)] h-96 lg:h-[40rem]' 
                     initial={{opacity: 0, scale: 0}} 
                     animate={{opacity: 1, scale: 1}} 
                     transition={{
@@ -93,9 +78,9 @@ const HeroSection = () => {
                         delay: 0.125
                     }}
                 />
-                {/* <img src='black.png'  className='absolute top-10 hidden'/> */}
+
                 
-                <motion.div className='h-44 w-44 absolute top-24 left-56 border-[1.3rem] border-amber-500 rounded-full -z-10' 
+                <motion.div className='sm:h-44 sm:w-44 h-24 w-24 absolute top-12 left-32 sm:left-32 sm:top-9 md:top-20 md:left-54 lg:left-[12rem] xl:top-20 xl:left-56 sm:border-[1.3rem] border-[10px] border-amber-500 rounded-full -z-10' 
                     initial={{
                         opacity: 0,
                         y: 40
@@ -113,8 +98,8 @@ const HeroSection = () => {
 
             {/* right part */}
             <div className=''>   
-                <div className='absolute -top-32 right-36 -z-0'>
-                        <motion.h3 className='text-[11rem] leading-[12rem] font-black text-[#22262F] tracking-tight -z-10'
+                <div className='absolute -top-32 right-36 -z-0 lg:left-[39rem] lg:-top-32 2xl:left-[47%] sm:left-[21rem] sm:-top-28'>
+                        <motion.h3 id='behind-text' className='lg:text-[11rem] lg:leading-[12rem] sm:text-[7rem] sm:leading-[8rem] font-black text-[#22262F] tracking-tight -z-10'
                             initial={{
                                 opacity: 0,
                                 y: -40
@@ -144,15 +129,16 @@ const HeroSection = () => {
                         delay: 1,
                         type: "spring"
                     }}
+                    className='md:block hidden'
                 >
-                    <div className='bg-[#1A1F25] h-48 w-64 absolute translate-y-24 translate-x-28 z-1' />
+                    <div className='bg-[#1A1F25] md:h-48 md:w-64 absolute md:translate-y-24 md:translate-x-28 z-1 sm:h-32 sm:w-48 sm:translate-y-32 sm:translate-x-6 ' />
                     <div className='relative'>   
                         
                         <div className='text-[#F1DABF] z-10 translate-y-28 -translate-x-12'>
-                            <h3 className='text-2xl font-medium'>
+                            <h3 className='md:text-2xl md:font-medium sm:text-md relative sm:left-14 sm:top-7'>
                                 Blvck Tumbler
                             </h3>
-                            <p className='opacity-50 text-sm translate-y-7 leading-7'>
+                            <p className='opacity-50 md:text-sm md:translate-y-7 md:leading-7 sm:text-[0.5rem] relative sm:left-12 sm:top-7 text-[2] '>
                                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br />
                                 Delectus aspernatur,Delectus aspernatur, Delectus <br />
                                 aspernatur,Delectus aspernatur, 

@@ -18,17 +18,18 @@ import Footer from './Footer';
         <HeroSection />
 
       </div>
-      <div className="absolute top-[100%]">
+      <div className="">
           <Menu />
-          <div className='translate-y-20'>
-            <Purchase />
-          </div>
-          <div className='translate-y-40'>
-            <DownloadCard />
-          </div>
-          <div className='translate-y-40'>
-            <Footer />
-          </div>
+      </div>
+      <div className='h-[44rem] w-96 sm:hidden' />
+      <div className='sm:mt-48 '>
+        <Purchase />
+      </div>
+      <div className='mt-12'>
+        <DownloadCard />
+      </div>
+      <div className=''>
+        <Footer />
       </div>
      
     </div>

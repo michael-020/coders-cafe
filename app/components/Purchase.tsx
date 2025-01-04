@@ -27,7 +27,7 @@ const Purchase = () => {
  }, [isInView])
 
   return (
-    <div className='h-[444px] w-screen  mt-16 '>
+    <div className='h-[444px] w-screen  '>
           <div ref={scope} className='flex px-44 py-12 '>
             {/* left part */}
             <div className='w-1/2 flex flex-col gap-12'>

@@ -18,7 +18,7 @@ const Navbar = () => {
             transition={{
                 duration: 0.5,
             }}
-            className='flex justify-between items-center w-[1240px] mx-auto'
+            className='flex justify-between items-center xl:w-[1240px] lg:w-[980px] md:w-[700px] w-[300px] mx-auto'
             >
             <div className='font-bold text-2xl'>
                 <span className='text-amber-500'>CODERS</span> <span className='text-white'>COFFEE.</span>
