@@ -10,7 +10,6 @@ Welcome to **Coders Cafe**, a modern and responsive frontend website built using
 5. [Available Scripts](#available-scripts)
 6. [Project Structure](#project-structure)
 7. [Deployment](#deployment)
-8. [License](#license)
 
 ---
 
@@ -100,11 +99,6 @@ This project can be easily deployed on **Vercel**:
 1. Push your code to GitHub.
 2. Import your repository into [Vercel](https://vercel.com/).
 3. Follow the deployment steps provided by Vercel.
-
----
-
-## 📜 **License**
-This project is licensed under the **MIT License**.
 
 ---
 
