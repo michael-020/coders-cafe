@@ -54,7 +54,7 @@ const HeroSection = () => {
                 >   
                    
                     <div className='relative lg:left-24 top-20 sm:top-28 sm:left-12 '>   
-                        <div className='bg-[#272C35] lg:h-48 lg:w-64  absolute sm:h-32 sm:w-48 left-[30vw] top-24 z-10 sm:left-0 sm:-top-4  lg:-top-24 lg:-left-12 ' />
+                        <div className='bg-[#272C35] lg:h-48 lg:w-64 sm:block hidden absolute sm:h-32 sm:w-48 left-[30vw] top-24 z-10 sm:left-0 sm:-top-4  lg:-top-24 lg:-left-12 ' />
                         <div className='text-[#F1DABF] sm:w-auto z-10 w-72 space-y-4 lg:space-y-0 relative sm:left-0 left-12 '>
                             <h3 className='lg:text-2xl sm:text-md relative left-[30vw] lg:-top-20 md:left-8 sm:left-14 lg:left-0 sm:bottom-2 text-sm'>
                                 Black Lifestyle Lovers,
@@ -107,8 +107,8 @@ const HeroSection = () => {
 
             {/* right part */}
             <div className=''>   
-                <div className='absolute -top-32 right-36 -z-0 lg:left-[27rem] xl:left-[40rem] lg:-top-32 2xl:left-[47%] sm:left-[21rem] sm:-top-28'>
-                        <motion.h3 id='behind-text' className='lg:text-[11rem] lg:leading-[12rem] sm:text-[7rem] sm:leading-[8rem] font-black text-[#22262F] tracking-tight -z-10'
+                <div className='absolute left-36  -z-0 lg:left-[27rem] xl:left-[40rem] lg:-top-32 2xl:left-[47%] sm:left-[21rem] sm:-top-28'>
+                        <motion.h3 id='behind-text' className='lg:text-[11rem] lg:leading-[12rem] sm:text-[7rem] sm:leading-[8rem] text-8xl font-black text-[#22262F] tracking-tight -z-10'
                             initial={{
                                 opacity: 0,
                                 y: -40

@@ -43,7 +43,7 @@ const Menu = () => {
          
         </div>
         {/* menu items */}
-        <div className='grid grid-cols-1 -translate-x-40 xs:-translate-x-[6.8rem] sm:-translate-x-20 lg:-translate-x-16 xl:-translate-x-0 sm:grid-cols-2 sm:gap-x-40 lg:grid-cols-3 gap-16 justify-items-stretch sm:mt-12'>
+        <div className='grid grid-cols-1 -translate-x-40 xs:-translate-x-[6.8rem] xss:-translate-x-[7.9rem] sm:-translate-x-20 lg:-translate-x-16 xl:-translate-x-0 sm:grid-cols-2 sm:gap-x-40 lg:grid-cols-3 gap-16 justify-items-stretch sm:mt-12'>
           <motion.div id='coffee-1' > 
             <MenuItem  imageURL='black-coffee.png' title='Black Coffee' description='lorem ipsum dolor sit amet, consectetur adipiscing elit.' />
           </motion.div>
