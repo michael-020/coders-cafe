@@ -26,7 +26,7 @@ const Navbar = () => {
             <div className='font-bold text-2xl sm:relative absolute right-14'>
                 <span className='text-amber-500'>CODERS</span> <span className='text-white'>COFFEE.</span>
             </div>
-            <button onClick={() => setIsVisible()} className='sm:relative absolute -right-8'>
+            <button onClick={() => setIsVisible()} className='sm:relative absolute -right-8 xss:-right-12 xs:-right-24 sm:right-0'>
                 <Menu size={33} color='white' />
             </button>
         </motion.div>
