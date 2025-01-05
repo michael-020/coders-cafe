@@ -1,18 +1,13 @@
 "use client"
-import React, { useState } from 'react'
+import React from 'react'
 import Navbar from './Navbar';
 import HeroSection from './HeroSection';
 import Menu from './Menu';
 import Purchase from './Purchase';
 import DownloadCard from './DownloadCard';
 import Footer from './Footer';
-import Sidebar from './Sidebar';
 
-
-
- const HomePage = () => {
-
-
+const HomePage = () => {
 
   return (
     <div className='relative w-full overflow-x-hidden'>

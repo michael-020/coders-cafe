@@ -1,5 +1,5 @@
 "use client"
-import { Facebook, Goal, Instagram, MapPin, Phone, Send } from 'lucide-react'
+import {  Goal, Map, Phone, Send } from 'lucide-react'
 import React from 'react'
 import { motion } from 'framer-motion'
 import { FacebookIcon } from '../icons/FacebookIcon'
@@ -49,7 +49,7 @@ const Footer = () => {
               </div>
               <div className='flex gap-2'>
                 <div>
-                  <MapPin />
+                  <Map />
                 </div>
                 <div>
                 Mumbai, Maharashtra

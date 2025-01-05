@@ -24,7 +24,6 @@ export const MenuItem = ({imageURL, title, description}: IMenuItem) => {
   return (
     <div className='h-60 w-72 flex flex-col items-center'>
         <motion.img src={imageURL} width={200} height={200} className='cursor-pointer [filter:drop-shadow(5px_15px_35px_#222)] '
-            // style={{"-webkit-filter": "drop-shadow(5px 15px 35px #222)", "filter": "drop-shadow(5px 5px 5px #222)"}}
             variants={imageVariant}
             whileHover={"hover"}
         />

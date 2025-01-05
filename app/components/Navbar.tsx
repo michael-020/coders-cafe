@@ -5,7 +5,7 @@ import { motion } from 'framer-motion'
 import { useSidebarStore } from '../stores/useSidebarStore'
 
 const Navbar = () => {
-    const { isVisible, setIsVisible } = useSidebarStore()
+    const { setIsVisible } = useSidebarStore()
 
   return (
     <nav className='sm:px-24 pt-10 w-full ml-3 '>

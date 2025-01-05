@@ -3,8 +3,6 @@ import React, { useEffect } from 'react'
 import { MenuItem } from './MenuItem'
 import { motion, useAnimate, useInView } from 'framer-motion'
 
-
-
 const Menu = () => {
   const [scope, animate] = useAnimate()
   const isInView = useInView(scope)
