@@ -16,12 +16,14 @@ const Menu = () => {
         animate("#coffee-1", {opacity: 0, y: 60} )
         animate("#coffee-2", {opacity: 0, y: 60} )
         animate("#coffee-3", {opacity: 0, y: 60} )
+        animate("p", {opacity: 0, y: 60} )
       }
       else{
         animate("#heading", {opacity: 1, y: 0}, {delay: 0.2, type: "spring"} )
         animate("#coffee-1", {opacity: 1, y: 0}, {delay: 0.2, type: "spring"} )
         animate("#coffee-2", {opacity: 1, y: 0}, {delay: 0.4, type: "spring"} )
         animate("#coffee-3", {opacity: 1, y: 0}, {delay: 0.6, type: "spring"} )
+        animate("p", {opacity: 1, y: 0}, {delay: 0.3, type: "spring"} )
       }
     }
     initAnimation()
@@ -43,7 +45,7 @@ const Menu = () => {
          
         </div>
         {/* menu items */}
-        <div className='grid grid-cols-1 -translate-x-40 sm:-translate-x-20 lg:translate-x-0 sm:grid-cols-2 sm:gap-x-40 lg:grid-cols-3 gap-16 justify-items-stretch mt-8'>
+        <div className='grid grid-cols-1 -translate-x-40 sm:-translate-x-20 lg:-translate-x-16 xl:-translate-x-0 sm:grid-cols-2 sm:gap-x-40 lg:grid-cols-3 gap-16 justify-items-stretch sm:mt-12'>
           <motion.div id='coffee-1' 
             
           > 
