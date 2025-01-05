@@ -45,12 +45,28 @@ const DownloadCard = () => {
           whileInView={"visible"}
           
         >
-          <button>
+          <motion.button
+            whileHover={{
+              scale: 1.08
+            }}
+            transition={{
+              type: "spring",
+              stiffness: 180
+            }}
+          >
               <img src='app_store.png' className='w-20 sm:w-full  ' />
-          </button>
-          <button>
+          </motion.button>
+          <motion.button
+             whileHover={{
+              scale: 1.08
+            }}
+            transition={{
+              type: "spring",
+              stiffness: 180
+            }}
+          >
               <img src="play_store.png" className='w-20 sm:w-full' />
-          </button>
+          </motion.button>
         </motion.div>
       </div>
     </div>  

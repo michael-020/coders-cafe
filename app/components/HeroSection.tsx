@@ -72,12 +72,19 @@ const HeroSection = () => {
 
             {/* center image part */}
             <div className='absolute md:relative -bottom-[27rem] sm:-left-2 z-20 sm:top-16 lg:top-2'>
-                <motion.img id='coffee-mug' src='black.png' className='sticky [filter:drop-shadow(15px_0px_30px_#000)] h-96 lg:h-[40rem]' 
+                <motion.img id='coffee-mug' src='black.png' className='sticky [filter:drop-shadow(15px_0px_30px_#000)] h-96 lg:h-[40rem] cursor-pointer' 
                     initial={{opacity: 0, scale: 0}} 
                     animate={{opacity: 1, scale: 1}} 
                     transition={{
                         type: "spring",
                         delay: 0.125
+                    }}
+                    whileHover={{
+                        scale: 1.1,
+                        transition:{
+                            type: "spring",
+                            stiffness: 180
+                          }
                     }}
                 />
 

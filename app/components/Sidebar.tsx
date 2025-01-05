@@ -40,10 +40,42 @@ const Sidebar = () => {
           <div className="h-full">
             <div className='h-full flex flex-col justify-center gap-12 items-center'>
                 <div className='w-0.5 h-28 bg-white' ></div>
-                <div className='flex flex-col gap-4 cursor-pointer'>
-                  <FacebookIcon w='40' h='40' />
-                  <InstaIcon w="40" h="40" />
-                  <Send color='white' size={35} />
+                <div className='flex flex-col gap-6 cursor-pointer'>
+                  <motion.button
+                    whileHover={{
+                      scale: 1.25
+                    }}
+                    transition={{
+                      type: "spring",
+                      stiffness: 180
+                    }}
+                  >
+                    <FacebookIcon w='40' h='40' />
+                  </motion.button>
+
+                  <motion.button
+                    whileHover={{
+                      scale: 1.25
+                    }}
+                    transition={{
+                      type: "spring",
+                      stiffness: 180
+                    }}
+                  >
+                    <InstaIcon w="40" h="40" />
+                  </motion.button>
+
+                  <motion.button
+                    whileHover={{
+                      scale: 1.25
+                    }}
+                    transition={{
+                      type: "spring",
+                      stiffness: 180
+                    }}
+                  >
+                    <Send color='white' size={35} />
+                  </motion.button>
                 </div>
                 <div className='w-0.5 h-28 bg-white' />
             </div>

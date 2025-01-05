@@ -13,6 +13,10 @@ const imageVariant = {
       scale: 1.1,
       y: -10,
       boxShadow: "black",
+      transition:{
+        type: "spring",
+        stiffness: 280
+      }
     }
   }
 

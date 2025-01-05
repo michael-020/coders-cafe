@@ -1,5 +1,5 @@
 "use client"
-import { useAnimate, useInView } from 'framer-motion'
+import { useAnimate, useInView, motion } from 'framer-motion'
 import React, { useEffect } from 'react'
 
 const Purchase = () => {
@@ -39,14 +39,29 @@ const Purchase = () => {
                 <input type='text' placeholder='Email' className='input-up sm:col-span-2 rounded-md sm:px-3 sm:py-2 p-1 border-2 border-gray-300 sm:mb-6 sm:ml-2' />
                 <input type='text' placeholder='Country' className='input-down sm:col-span-2 rounded-md sm:px-3 sm:py-2 p-1 border-2 border-gray-300 sm:mr-2'/>
                 <input type='text' placeholder='Zipcode' className='input-down sm:col-span-1 rounded-md sm:px-3 sm:py-2 p-1 border-2 border-gray-300' />
-                <button className='sm:w-[24rem] w-[16rem] bg-amber-500 py-2 rounded-md mt-6'>Order Now</button>
+                <motion.button className='sm:w-[24rem] w-[16rem] bg-amber-500 py-2 rounded-md mt-6'
+                  whileHover={{
+                    scale: 1.08
+                  }}
+                  whileTap={{
+                    scale: 0.9
+                  }}
+                >Order Now</motion.button>
               </div>
             </div>
 
             {/* right part */}
             <div className=' lg:translate-x-20 sm:translate-x-20 xl:translate-x-0 translate-x-10 lg:mt-0 mt-12'>
               <div>
-                <img id='world-map' src="world-map.png"  className='lg:w-[500px] 2xl:w-[550px] sm:w-[400px] w-[280px]' />
+                <motion.img id='world-map' src="world-map.png"  className='lg:w-[500px] 2xl:w-[550px] sm:w-[400px] w-[280px]' 
+                  whileHover={{
+                    scale: 1.2
+                  }}
+                  transition={{
+                    type: "spring",
+                    stiffness: 180
+                  }}
+                />
               </div>
             </div>
           </div>
