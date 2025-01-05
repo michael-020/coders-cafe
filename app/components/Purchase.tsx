@@ -28,7 +28,7 @@ const Purchase = () => {
 
   return (
     <div className='h-full w-screen -translate-x-10 sm:-translate-x-20 lg:-translate-x-0 2xl:translate-x-[36rem] '>
-          <div ref={scope} className='flex flex-col lg:flex-row items-center 2xl:-space-x-[32rem] sm:px-44 sm:pb-6 lg:-mt-8 sm:-mt-32 -mt-[36rem]'>
+          <div ref={scope} className='flex flex-col lg:flex-row items-center 2xl:-space-x-[32rem] sm:px-44 sm:pb-6 lg:-mt-8 sm:-mt-32 -mt-[41rem]'>
             {/* left part */}
             <div className='w-1/2 flex flex-col gap-12'>
               <div id='left-heading'>

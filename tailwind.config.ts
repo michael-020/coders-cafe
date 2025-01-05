@@ -17,6 +17,9 @@ export default {
         'footer-texture': "url('/img/footer-texture.png')",
       }
     },
+    screens: {
+      "xs": "425px",
+    }
   },
   plugins: [],
 } satisfies Config;
