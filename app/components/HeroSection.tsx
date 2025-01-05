@@ -19,8 +19,8 @@ const HeroSection = () => {
         <div className='grid grid-cols-3 justify-items-center gap-2 items-center relative top-20'>
             {/* left part */}
             <div className='z-20'>
-                <div className='relative bottom-24 left-28 sm:bottom-10 sm:left-10'>
-                    <motion.h1 id='left-header' className='text-[#F1DABF] lg:text-[4.8rem] font-bold lg:leading-[6rem] relative lg:left-20 lg:top-12 top-32 text-3xl'
+                <div className='relative bottom-24 left-56 sm:bottom-10 sm:left-10 md:-top-32 md:-left-[-7rem]'>
+                    <motion.h1 id='left-header' className='text-[#F1DABF] xl:text-[4.7rem] lg:text-[3.5rem] font-bold lg:leading-[4rem] xl:leading-[6rem] relative lg:-left-2 lg:top-9 top-32 text-3xl'
                         initial={{
                             opacity: 0,
                             y: -40
@@ -52,14 +52,14 @@ const HeroSection = () => {
                         type: "spring"
                     }}
                 >   
-                    <div className='bg-[#272C35] lg:h-48 lg:w-64  relative sm:h-32 sm:w-48 left-12 top-24' />
-                    <div className='relative lg:left-24 '>   
-                        
-                        <div className='text-[#F1DABF] z-10'>
-                            <h3 className='lg:text-2xl sm:text-md relative lg:-top-20  sm:left-2 sm:bottom-2 text-'>
+                   
+                    <div className='relative lg:left-24 top-20 sm:top-28 sm:left-12 '>   
+                        <div className='bg-[#272C35] lg:h-48 lg:w-64  absolute sm:h-32 sm:w-48 left-[30vw] top-24 z-10 sm:left-0 sm:-top-4  lg:-top-24 lg:-left-12 ' />
+                        <div className='text-[#F1DABF] sm:w-auto z-10 w-72 space-y-4 lg:space-y-0 relative sm:left-0 left-12 '>
+                            <h3 className='lg:text-2xl sm:text-md relative left-[30vw] lg:-top-20 md:left-8 sm:left-14 lg:left-0 sm:bottom-2 text-sm'>
                                 Black Lifestyle Lovers,
                             </h3>
-                            <p className='opacity-50 xl:text-sm md:text-xs sm:text-[0.5rem] relative  lg:-top-12  sm:leading-10 sm:left-2'>
+                            <p className='opacity-50 xl:text-sm md:text-[0.5rem] sm:text-[0.2rem] text-[0.5rem] relative left-[30vw] lg:-left-0  lg:-top-12 md:leading-4  sm:leading-10 sm:left-14 md:left-8'>
                                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br />
                                 Delectus aspernatur, cumque eos neque dolorem <br />
                                 architecto deserunt quis voluptatibus in quisquam quia <br />
@@ -71,7 +71,7 @@ const HeroSection = () => {
             </div>
 
             {/* center image part */}
-            <div className='absolute md:relative -bottom-[12rem] sm:-left-2 z-20 sm:top-16 lg:top-2'>
+            <div className='absolute md:relative -bottom-[27rem] sm:-left-2 z-20 sm:top-16 lg:top-2'>
                 <motion.img id='coffee-mug' src='black.png' className='sticky [filter:drop-shadow(15px_0px_30px_#000)] h-96 lg:h-[40rem]' 
                     initial={{opacity: 0, scale: 0}} 
                     animate={{opacity: 1, scale: 1}} 
@@ -82,7 +82,7 @@ const HeroSection = () => {
                 />
 
                 
-                <motion.div className='sm:h-44 sm:w-44 h-24 w-24 absolute top-12 left-32 sm:left-32 sm:top-9 md:top-20 md:left-54 lg:left-[12rem] xl:top-20 xl:left-56 sm:border-[1.3rem] border-[10px] border-amber-500 rounded-full -z-10' 
+                <motion.div className='sm:h-32 sm:w-32 lg:h-44 lg:w-44 h-24 w-24 absolute top-12 left-32 sm:left-28 sm:top-9 md:left-54 lg:top-20 lg:left-[12rem] xl:top-20 xl:left-56 lg:border-[1.3rem] md:border-[1rem] border-[10px] border-amber-500 rounded-full -z-10' 
                     initial={{
                         opacity: 0,
                         y: 40
@@ -100,7 +100,7 @@ const HeroSection = () => {
 
             {/* right part */}
             <div className=''>   
-                <div className='absolute -top-32 right-36 -z-0 lg:left-[39rem] lg:-top-32 2xl:left-[47%] sm:left-[21rem] sm:-top-28'>
+                <div className='absolute -top-32 right-36 -z-0 lg:left-[27rem] xl:left-[40rem] lg:-top-32 2xl:left-[47%] sm:left-[21rem] sm:-top-28'>
                         <motion.h3 id='behind-text' className='lg:text-[11rem] lg:leading-[12rem] sm:text-[7rem] sm:leading-[8rem] font-black text-[#22262F] tracking-tight -z-10'
                             initial={{
                                 opacity: 0,
@@ -133,14 +133,14 @@ const HeroSection = () => {
                     }}
                     className='md:block hidden'
                 >
-                    <div className='bg-[#1A1F25] md:h-48 md:w-64 absolute md:translate-y-24 md:translate-x-28 z-1 sm:h-32 sm:w-48 sm:translate-y-32 sm:translate-x-6 ' />
-                    <div className='relative'>   
-                        
-                        <div className='text-[#F1DABF] z-10 translate-y-28 -translate-x-12'>
-                            <h3 className='md:text-2xl md:font-medium sm:text-md relative sm:left-14 sm:top-7'>
+                    
+                    <div className='relative md:left-2 top-20 sm:top-[8.7rem] sm:right-4 xl:top-[12rem] '>      
+                        <div className='bg-[#1A1F25] lg:h-48 lg:w-64  absolute sm:h-32 sm:w-48 left-[30vw] top-24 z-10 sm:left-4 sm:-top-4  lg:-top-24 lg:-left-12 xl:left-12' />
+                        <div className='text-[#F1DABF] z-10 sm:w-auto w-72 space-y-4 lg:space-y-0 relative -left-12'>
+                            <h3 className='lg:text-2xl sm:text-md relative left-[30vw] lg:-top-20 md:left-8 sm:left-14 lg:left-0 sm:bottom-2 text-sm xl:-left-12'>
                                 Blvck Tumbler
                             </h3>
-                            <p className='opacity-50 md:text-sm md:translate-y-7 md:leading-7 sm:text-[0.5rem] relative sm:left-12 sm:top-7 text-[2] '>
+                            <p className='opacity-50 xl:text-sm md:text-[0.5rem] sm:text-[0.2rem] text-[0.5rem] relative md:leading-4 left-8  lg:-top-12 lg:leading-4 xl:-left-12 '>
                                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br />
                                 Delectus aspernatur,Delectus aspernatur, Delectus <br />
                                 aspernatur,Delectus aspernatur, 

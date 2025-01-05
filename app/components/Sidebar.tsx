@@ -13,9 +13,7 @@ const Sidebar = () => {
       {isVisible && (
         <motion.div
           key="sidebar"
-          // 👇 Changed height and positioning styles
-          className="w-[165px] absolute top-0 -right-[100vw] h-screen bg-amber-600 shadow-lg pointer-events-auto z-20"
-          
+          className="sm:w-[165px] w-[100px] absolute top-0 -right-[100vw] h-screen bg-amber-600 shadow-lg pointer-events-auto z-30"
           initial={{
             opacity: 0,
             x: "100%"

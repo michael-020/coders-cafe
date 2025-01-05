@@ -16,7 +16,7 @@ import Sidebar from './Sidebar';
 
   return (
     <div className='relative w-full overflow-x-hidden'>
-      <div className='absolute top-0 z-30 max-w-full'>
+      <div className='absolute top-0 z-40 max-w-full 2xl:left-[27rem]'>
         <Navbar />
       </div>
       <div className='relative w-full'>
