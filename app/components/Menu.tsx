@@ -28,14 +28,14 @@ const Menu = () => {
   }, [isInView])
 
   return (
-    <div className='h-[444px] w-screen px-44 py-12 '>
-      <div ref={scope} className=' h-full  flex flex-col items-center gap-5'>
+    <div className='h-full w-screen px-44 py-12  '>
+      <div ref={scope} className=' h-full  flex flex-col items-center gap-5 '>
         {/* heading */}
-        <div className='w-56 flex flex-col items-center -translate-x-4'>
+        <div className='w-56 lg:w-96 flex flex-col items-center -translate-x-4'>
           <h4 id='heading' className='text-center  text-3xl font-bold'>
             <span className=''>Fresh and </span> <span className='text-amber-500'>Tasty coffee</span>
           </h4>
-          <div className='w-72'>
+          <div className='w-72 lg:w-[32rem]'>
             <p className='text-center text-sm my-2'>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos reprehenderit eum <br></br> ducimus, distinctio cum eaque totam voluptatem ex dolorem fuga.
             </p>
@@ -43,7 +43,7 @@ const Menu = () => {
          
         </div>
         {/* menu items */}
-        <div className='grid grid-cols-1 -translate-x-36 sm:-translate-x-0 md:grid-cols-3 gap-16 justify-items-stretch mt-8'>
+        <div className='grid grid-cols-1 -translate-x-40 sm:-translate-x-20 lg:translate-x-0 sm:grid-cols-2 sm:gap-x-40 lg:grid-cols-3 gap-16 justify-items-stretch mt-8'>
           <motion.div id='coffee-1' 
             
           > 

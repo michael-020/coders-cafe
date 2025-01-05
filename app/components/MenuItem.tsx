@@ -25,7 +25,7 @@ export const MenuItem = ({imageURL, title, description}: IMenuItem) => {
             whileHover={"hover"}
         />
         <h3 className='text-amber-500 font-extrabold text-xl'>{title}</h3>
-        <p className='text-center'>{description}</p>
+        <p className='text-center text-sm sm:text-md'>{description}</p>
     </div>
   )
 }
