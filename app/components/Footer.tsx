@@ -2,6 +2,8 @@
 import { Facebook, Goal, Instagram, MapPin, Phone, Send } from 'lucide-react'
 import React from 'react'
 import { motion } from 'framer-motion'
+import { FacebookIcon } from '../icons/FacebookIcon'
+import { InstaIcon } from '../icons/InstaIcon'
 
 const Footer = () => {
   return (
@@ -72,11 +74,11 @@ const Footer = () => {
             <div>
               <h3 className='text-3xl font-bold'>Follow us</h3>
             </div>
-            <div className='flex gap-4'>
-              <Facebook />
-              <Instagram />
-              <Send />
-              <Goal />
+            <div className='flex gap-4 items-center cursor-pointer'>
+              <FacebookIcon w='30' h='30' />
+              <InstaIcon w='30' h='30' />
+              <Send size={26} />
+              <Goal size={28} />
             </div>
             <div className='flex gap-3 flex-col'>
               <div>

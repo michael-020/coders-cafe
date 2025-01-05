@@ -1,17 +1,19 @@
 "use client"
 import React from 'react'
 import { motion } from 'framer-motion'
+import Sidebar from './Sidebar'
 
 const HeroSection = () => {
    
   return (
-    <div className='w-screen h-screen overflow-x-hidden relative ref={scope}'>
+    <div className='w-screen h-screen overflow-hidden relative '>
+        <div className='absolute h-full'>
+          <Sidebar />
+        </div>
         <div className=''>
             <div className='absolute  h-screen bg-[#1A1F25] w-[50%] z-10'>
-
             </div>
             <div className='absolute right-0  h-screen bg-[#272C35] w-[50%]'>
-
             </div>
         </div>
         <div className='grid grid-cols-3 justify-items-center gap-2 items-center relative top-20'>
