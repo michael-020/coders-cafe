@@ -24,7 +24,7 @@ const Navbar = () => {
             className='flex justify-between items-center 2xl:w-[1500px] 2xl:space-x-[35rem] xl:w-[1240px] lg:w-[980px] md:w-[700px] w-[270px] max-w-full mx-auto px-4'
             >
             <div className='font-bold text-2xl sm:relative absolute right-14'>
-                <span className='text-amber-500'>CODERS</span> <span className='text-white'>COFFEE.</span>
+                <span className='text-amber-500'>CODERS</span> <span className='text-white'>CAFE.</span>
             </div>
             <button onClick={() => setIsVisible()} className='sm:relative absolute -right-8 xss:-right-12 xs:-right-24 sm:right-0'>
                 <Menu size={33} color='white' />
