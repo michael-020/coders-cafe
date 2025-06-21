@@ -27,15 +27,16 @@ const DownloadCard = () => {
       <div className='w-96 sm:absolute sm:top-2 lg:top-10 2xl:right-[44rem] 2xl:top-20 xl:right-[22rem] sm:right-36  flex-col items-center relative -top-20 sm:gap-5'>
         <div className='text-center flex flex-col  md:gap-5'>
           <motion.h3 className='font-bold sm:text-3xl text-sm 2xl:text-4xl '
-            
             variants={upwardAnimationVariant}
             initial="hidden"
             whileInView={"visible"}
+            viewport={{ once: true }}
           >Download the app</motion.h3>
           <motion.p
             variants={upwardAnimationVariant}
             initial="hidden"
             whileInView={"visible"}
+            viewport={{ once: true }}
             className='text-[0.5rem] sm:text-base 2xl:text-lg '
           >Lorem ipsum dolor sit amet consedolor sit amet <br /> consectetur adipisicing elit. Officiis</motion.p>
         </div>
@@ -43,7 +44,7 @@ const DownloadCard = () => {
           variants={upwardAnimationVariant}
           initial="hidden"
           whileInView={"visible"}
-          
+          viewport={{ once: true }}
         >
           <motion.button
             whileHover={{
