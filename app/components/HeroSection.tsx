@@ -80,7 +80,7 @@ const HeroSection = () => {
                         delay: 0.125
                     }}
                     whileHover={{
-                        scale: 1.1,
+                        scale: 1.03,
                         transition:{
                             type: "spring",
                             stiffness: 180
